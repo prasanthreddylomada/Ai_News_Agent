@@ -1,0 +1,129 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Homepage Container */
+.homepage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styling */
+.homepage h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+/* Scroll Wrapper for Arrows and Container */
+.scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+/* Scroll Container */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin-right: 35px;
+  margin-left: 35px;
+  width: 100%;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* State & District Button Styles */
+.state-button,
+.district-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.state-button:hover,
+.district-button:hover {
+  background-color: #0056b3;
+}
+
+.state-button.active,
+.district-button.active {
+  background-color: #0056b3;
+}
+
+/* Scroll Arrow Buttons */
+.scroll-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: #3f3f3f;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border-radius: 50%;
+  outline: none;
+}
+
+.scroll-button.left {
+  left: 5px;
+}
+
+.scroll-button.right {
+  right: 5px;
+}
+
+/* News Section Styling */
+.news-section {
+  margin: 20px 0;
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.news-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.news-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.news-item h3 {
+  margin-bottom: 8px;
+  color: #222;
+  font-size: 1.3rem;
+}
+
+.news-item p {
+  line-height: 1.6;
+}
